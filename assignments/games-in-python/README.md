@@ -1,19 +1,49 @@
 
-# 🎮 Hangman Game Challenge
+# 📘 Assignment: Hangman Game
 
-Build the classic word-guessing game using Python strings, loops, and user input.
+## 🎯 Objective
 
-## � What You'll Build
+Build the classic word-guessing game using Python strings, loops, and user input. You'll practice string manipulation, conditionals, random selection, and game logic.
 
-Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+## 📝 Tasks
 
-**Skills practiced:** String manipulation, loops, conditionals, random selection
+### 🛠️ Game Setup and Word Selection
 
-## ✅ Must Have's
+#### Description
+Set up the game structure and implement a function to randomly select a word from a predefined list.
 
-Your game must:
-- Randomly select words from a predefined list
-- Accept letter guesses and show current progress (_ _ _ format)
-- Track incorrect guesses remaining
-- End when word is guessed or attempts exhausted
-- Display win/lose messages
+#### Requirements
+Completed program should:
+
+- Define a list of at least 10 words for the game
+- Implement a function to randomly select a word
+- Initialize game variables (guessed letters, attempts remaining, etc.)
+- Display the initial hidden word state using underscores (e.g., `_ _ _ _`)
+
+### 🛠️ Letter Guessing and Progress Tracking
+
+#### Description
+Implement the core guessing mechanism that accepts player input and updates the game state.
+
+#### Requirements
+Completed program should:
+
+- Accept letter guesses from the user
+- Check if the guessed letter is in the word
+- Update the display to show revealed letters
+- Track incorrect guesses and decrement attempts remaining
+- Prevent duplicate guesses
+
+### 🛠️ Game Win/Loss Logic
+
+#### Description
+Implement the logic to determine game outcomes and provide appropriate feedback.
+
+#### Requirements
+Completed program should:
+
+- Detect when the word is completely guessed (win condition)
+- Detect when attempts are exhausted (loss condition)
+- Display the final hidden word or complete word
+- Show win or lose messages with appropriate information
+- Offer to play again
